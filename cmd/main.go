@@ -31,6 +31,10 @@ func main() {
 		return
 	}
 
+	printPokemons(parsedCmdOutput)
+}
+
+func printPokemons(parsedCmdOutput *ShellCommandOutput) {
 	fmt.Println("POKEMONS:")
 	for i, pokemon := range parsedCmdOutput.Results {
 		fmt.Printf(
